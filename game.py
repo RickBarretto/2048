@@ -1,6 +1,27 @@
-"""Algoritmo Push 
+"""The 2048 Game!
 
-Explicando o Algoritmo Push do jogo 2048 
+1. Instruções de uso
+=================
+
+Para rodar o jogo basta usar o seguinte comando 
+com o Python 3 instalado no sistema:
+
+.. code::
+
+    $ py game.py
+
+Então será necessário configurar o jogo como desejar.
+Logo de cara será possível selecionar o idioma e o suporte a UTF-8.
+
+Certifique-se que seu terminal suporta UTF-8, do contrário configure o
+jogo para modo ASCII. Mas não se preocupe, é possível mudar essas configurações 
+durante o jogo também.
+
+
+2. Algoritmo Push 
+==============
+
+2.1 Explicando o Algoritmo Push do jogo 2048 
 ----------------------------------------
 
 O nome dado ao algoritmo foi Push. Ele é dividido em duas partes,
@@ -9,8 +30,8 @@ Ambos retornam verdadeiro em caso de movimentação.
 
 A ideia é que se use as funções públicas pre-identificadas por ``push``.
 
-Explicação do algoritmo de soma
-===============================
+2.2 Explicação do algoritmo de soma
+-------------------------------
 
 A soma funciona com dois ponteiros, o primeiro chamado de 'idx
 e o segundo de :cursor:.
@@ -69,8 +90,8 @@ e o outro é atribuído a 0.
                        idx                 o algoritmo finaliza.
 
 
-Explicação do algotimo de movimentação
-======================================
+2.3 Explicação do algotimo de movimentação
+--------------------------------------
 
 A movimentação também trabalha com dois ponteiros, o primeiro chamado de :idx:
 e o segundo, de :cursor:.
@@ -115,6 +136,24 @@ Assim como no algoritmo anterior, ele também funciona na direção oposta
                         ~       ^           representação ao lado.
                        idx                  Assim, finalizando o algoritmo.
                               cursor
+
+3. Limitações
+=============
+
+Esse código é parte do meu Problem Based Learning (PBL) da universidade,
+logo muita ferramenta me fora restrita para o desenvolvimento dessa aplicação.
+
+São elas:
+  - Uso de pacotes externos
+  - Uso de pacotes da aplicação e mais de dois módulos
+  - Uso de determinados módulos internos do Python
+  - Interface gráfica
+  - Banco de dados
+  - Filtros e Ranking para o histórico de partidas
+  - Uso de funções muitas internas do Python
+  - Uso de classes, dataclasses e orientação à objetos
+  - Uso de logging
+  - Uso de decorators, generators, iterators, list comprehensions...
 """
 
 import helpers

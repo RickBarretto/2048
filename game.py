@@ -395,7 +395,7 @@ def records_menu(config: tuple[int, bool], records: list[tuple[str, int, int]]) 
         A interface gráfica está de acordo com :helpers.print_records:.
     """
     while True:
-        helpers.print_records(records, config=(lang, ascii))
+        helpers.print_records(records, config=config)
 
         match config:
             case (2, True):

@@ -72,9 +72,8 @@ License:
 """
 
 
-import random as rand
 import os
-
+import random as rand
 
 # =~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~
 #  Lógica do jogo

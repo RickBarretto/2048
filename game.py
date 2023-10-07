@@ -222,7 +222,7 @@ def choice_menu(
             print(helpers.align_start(f"[{i+1}] - {options[i]}"))
 
     possibilities: list[str] = []  # Possibilidades disponíveis
-    banner = banner_config != None  # Se há banner
+    banner = banner_config is not None  # Se há banner
 
     # Adiciona todas as possibilidades disponíveis em ``possibilities``
     for i in range(len(options)):
@@ -505,16 +505,14 @@ def safe_input_choice() -> str:
 
 
 def print_credits() -> None:
-
     print(
         "(C) RickBarretto, 2023\n\n"
         "This Source Code Form is subject to the terms of the Mozilla Public",
         "License, v. 2.0. If a copy of the MPL was not distributed with this",
-        "file, You can obtain one at https://mozilla.org/MPL/2.0/.")
+        "file, You can obtain one at https://mozilla.org/MPL/2.0/.",
+    )
 
-    print(
-        "UTF-8 Banner by:\n",
-        "\t(C) Manytools, your online toolshed, 2011-2023\n")
+    print("UTF-8 Banner by:\n", "\t(C) Manytools, your online toolshed, 2011-2023\n")
 
 
 if __name__ == "__main__":

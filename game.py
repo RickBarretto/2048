@@ -46,7 +46,7 @@ A ideia é que se use as funções públicas pre-identificadas por ``push``.
 2.2 Explicação do algoritmo de soma
 -------------------------------
 
-A soma funciona com dois ponteiros, o primeiro chamado de 'idx
+A soma funciona com dois ponteiros, o primeiro chamado de :idx:
 e o segundo de :cursor:.
 
 Basicamente, :idx: é o nosso pivô, este é usado como nossa referência principal.

@@ -386,6 +386,8 @@ def main_menu(lang: int, ascii: bool) -> tuple[list[tuple[str, int, int]], int, 
             # Sair
             case "5":
                 return records, lang, ascii
+            case _:
+                pass
 
 
 def records_menu(config: tuple[int, bool], records: list[tuple[str, int, int]]) -> None:
@@ -413,7 +415,7 @@ def records_menu(config: tuple[int, bool], records: list[tuple[str, int, int]]) 
             pass
 
 
-def game_match(lang, ascii, player) -> tuple[str, int, int, bool]:
+def game_match(lang: int, ascii: bool, player: str) -> tuple[str, int, int, bool]:
     """O menu de partida do jogo.
 
     1. O jogo inicia com uma tabela 4x4, preenchida por um par de números,
@@ -463,6 +465,8 @@ def game_match(lang, ascii, player) -> tuple[str, int, int, bool]:
 
                 if turn_moves or turn_score:
                     helpers.insert_block(table)
+            case _:
+                pass
 
 
 def end_of_match(

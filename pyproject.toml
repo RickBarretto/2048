@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "2048-game"
+version = "0.1.0"
+description = "Yet another 2048 game, but in TUI mode!"
+authors = ["RickBarretto <78623871+RickBarretto@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[tool.poetry.group.dev.dependencies]
+pylint = "^3.0.1"
+bandit = "^1.7.5"
+mypy = "^1.5.1"
+flake8 = "^6.1.0"
+black = "^23.9.1"
+pytest = "^7.4.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

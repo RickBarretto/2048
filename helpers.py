@@ -150,7 +150,7 @@ def can_move(table: list[list[int]]) -> bool:
     def can_move_vertically(table: list[list[int]]) -> bool:
         for col in range(4):
             for row in range(3):
-                if table[row][col] == table[row + 1]:
+                if table[row][col] == table[row + 1][col]:
                     return True
         return False
 

@@ -235,8 +235,6 @@ def push_blocks(table: list[list[int]], direction: str) -> tuple[int, int]:
             return (_vertical_sum(table, "w"), _vertical_move(table, "w"))
         case "S":
             return (_vertical_sum(table, "s"), _vertical_move(table, "s"))
-        case _:
-            return 0, 0
 
 
 # =~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~
